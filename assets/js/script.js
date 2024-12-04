@@ -131,8 +131,25 @@ for (let i = 0; i < formInputs.length; i++) {
       formBtn.setAttribute("disabled", "");
     }
 
-  });
+  }); 
 }
+
+// Handling emails sent on contact page
+emailjs.init("bkOfPzNXTSJ9uXVCk");
+
+document.querySelector(".form").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  var formData = new FormData(event.target);
+
+  emailjs.sendForm("service_cnzii8s", "template_idkt4yt", formData)
+    .then(function(response) {
+      alert("Message sent successfully!");
+    }, function(error) {
+      alert("Failed to send message: " + error);
+    });
+});
+
 
 
 
@@ -157,3 +174,42 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+
+
+
+
+
+function expandProject(item) {
+  // Hide the project list
+  document.querySelector('.project-list').style.display = 'none';
+
+  // Show the expanded content container
+  document.getElementById("expanded-content").style.display = "block";
+
+  // Get project details from the clicked item
+  const projectImage = item.querySelector('.project-img img').src;
+  const projectTitle = item.querySelector('.project-title').textContent;
+  const projectCategory = item.querySelector('.project-category').textContent;
+  const projectDescription = item.getAttribute('data-description');  // Get multi-paragraph description with HTML
+
+  // Populate the expanded content body
+  document.getElementById("expanded-content-body").innerHTML = `
+      <img src="${projectImage}" alt="${projectTitle}" style="width: 100%; max-width: 600px; height: auto;">
+      <h2>${projectTitle}</h2>
+      <p>Category: ${projectCategory}</p>
+      ${projectDescription}  <!-- Render the multi-paragraph HTML description -->
+  `;
+}
+
+function collapseProjectView() {
+    // Show the project list again
+    document.querySelector('.project-list').style.display = 'grid';
+
+    // Hide the expanded content container
+    document.getElementById("expanded-content").style.display = "none";
+}
+
+
+
+

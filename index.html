@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>vCard - Personal Portfolio</title>
 
+  <!-- Email JS for the form to send the email-->
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
   <!--
     - favicon
   -->
@@ -42,13 +45,13 @@
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
+          <img src="./assets/images/my-avatar.png" alt="Alor Luka" width="80">
         </figure>
 
         <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Richard hanrick</h1>
+          <h1 class="name" title="Alor Luka">Alor Luka</h1>
 
-          <p class="title">Web developer</p>
+          <p class="title">Data analyst | Business Analyst</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -74,7 +77,7 @@
             <div class="contact-info">
               <p class="contact-title">Email</p>
 
-              <a href="mailto:richard@example.com" class="contact-link">richard@example.com</a>
+              <a class="contact-link">alorluka@gmail.com</a>
             </div>
 
           </li>
@@ -86,40 +89,47 @@
             </div>
 
             <div class="contact-info">
-              <p class="contact-title">Phone</p>
+              <p class="contact-title">Whatsapp</p>
 
-              <a href="tel:+12133522795" class="contact-link">+1 (213) 352-2795</a>
+              <a class="contact-link">+60197856022</a>
             </div>
 
           </li>
 
+           <!-- date of birth NOT necessary
           <li class="contact-item">
 
+             
             <div class="icon-box">
               <ion-icon name="calendar-outline"></ion-icon>
             </div>
 
-            <div class="contact-info">
+           
+              <div class="contact-info">
               <p class="contact-title">Birthday</p>
 
               <time datetime="1982-06-23">June 23, 1982</time>
             </div>
 
-          </li>
+          </li> -->
 
+          <!--  Location not necessary 
+            
           <li class="contact-item">
 
-            <div class="icon-box">
+           
+             <div class="icon-box">
               <ion-icon name="location-outline"></ion-icon>
             </div>
 
-            <div class="contact-info">
+            
+             <div class="contact-info">
               <p class="contact-title">Location</p>
 
               <address>Sacramento, California, USA</address>
-            </div>
+            </div> 
 
-          </li>
+          </li> -->
 
         </ul>
 
@@ -128,22 +138,26 @@
         <ul class="social-list">
 
           <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
+            <a href="https://www.linkedin.com/in/alorluka/" class="social-link" target="_blank" rel="noopener noreferrer">
+              <ion-icon name="logo-LinkedIn"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
+            <a href="https://github.com/AlorLuka" class="social-link" target="_blank" rel="noopener noreferrer">
+              <ion-icon name="logo-github"></ion-icon>
             </a>
           </li>
 
-          <li class="social-item">
+          
+
+         <!-- Extra social icon if needed 
+           <li class="social-item">
             <a href="#" class="social-link">
               <ion-icon name="logo-instagram"></ion-icon>
             </a>
           </li>
+            -->
 
         </ul>
 
@@ -181,9 +195,9 @@
             <button class="navbar-link" data-nav-link>Portfolio</button>
           </li>
 
-          <li class="navbar-item">
+          <!--<li class="navbar-item">
             <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
+          </li> -->
 
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contact</button>
@@ -209,18 +223,20 @@
 
         <section class="about-text">
           <p>
-            I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
-            I enjoy
-            turning complex problems into simple, beautiful and intuitive designs.
+            Welcome! I’m Luka, a passionate Data Analyst with a knack for transforming data into actionable insights that drive business growth. 
+            Every business collects data— you might as well turn yours into a powerful tool for growth.
+            With a background in business analytics and hands-on experience in both marketing and operations, 
+            I specialize in using data to support strategic decision-making and uncover new opportunities.
           </p>
 
           <p>
-            My job is to build your website so that it is functional and user-friendly but at the same time attractive.
-            Moreover, I
-            add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
-            across your
-            message and identity in the most creative way. I created web design for many famous brand companies.
+            Throughout my journey, I've worked on projects involving data visualization, automation, and performance tracking, 
+            all aimed at making data more accessible and meaningful. 
+            Whether it's <b>building dynamic dashboards in Excel, using SQL to dive into complex datasets, or handling missing data with python</b>,
+            I love finding creative solutions to help teams understand their data better and make informed decisions.
           </p>
+
+          
         </section>
 
 
@@ -242,10 +258,10 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
+                <h4 class="h4 service-item-title">Business Intelligence</h4>
 
                 <p class="service-item-text">
-                  The most modern and high-quality design made at a professional level.
+                  Providing in-depth business analysis to uncover trends, identify opportunities, and support strategic planning.
                 </p>
               </div>
 
@@ -258,10 +274,10 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
+                <h4 class="h4 service-item-title">Database management</h4>
 
                 <p class="service-item-text">
-                  High-quality development of sites at the professional level.
+                  Managing large datasets, optimizing databases, and ensuring seamless data retrieval.
                 </p>
               </div>
 
@@ -274,10 +290,10 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile apps</h4>
+                <h4 class="h4 service-item-title">Reporting automation</h4>
 
                 <p class="service-item-text">
-                  Professional development of applications for iOS and Android.
+                  Streamlining reporting processes with automation, ensuring fast, reliable access to essential data and metrics.
                 </p>
               </div>
 
@@ -290,10 +306,10 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Photography</h4>
+                <h4 class="h4 service-item-title">KPI & Metric Development</h4>
 
                 <p class="service-item-text">
-                  I make high-quality photos of any category at a professional level.
+                  Tracking key KPIs to measure business success and drive continuous improvement.
                 </p>
               </div>
 
@@ -304,109 +320,7 @@
         </section>
 
 
-        <!--
-          - testimonials
-        -->
-
-        <section class="testimonials">
-
-          <h3 class="h3 testimonials-title">Testimonials</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
-
-
+        
         <!--
           - testimonials modal
         -->
@@ -437,11 +351,6 @@
 
               <div data-modal-text>
                 <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
                 </p>
               </div>
 
@@ -452,55 +361,6 @@
         </div>
 
 
-        <!--
-          - clients
-        -->
-
-        <section class="clients">
-
-          <h3 class="h3 clients-title">Clients</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
 
       </article>
 
@@ -518,63 +378,7 @@
           <h2 class="h2 article-title">Resume</h2>
         </header>
 
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">University school of the arts</h4>
-
-              <span>2007 — 2008</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">New york academy of art</h4>
-
-              <span>2006 — 2007</span>
-
-              <p class="timeline-text">
-                Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
-                omnis..
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">High school of art and design</h4>
-
-              <span>2002 — 2004</span>
-
-              <p class="timeline-text">
-                Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
-                magni dolores
-                eos.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
+    
         <section class="timeline">
 
           <div class="title-wrapper">
@@ -589,33 +393,45 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Creative director</h4>
+              <h4 class="h4 timeline-item-title">Marketing Manager</h4>
 
-              <span>2015 — Present</span>
+              <span>02/2022 — 06/2024</span>
 
               <p class="timeline-text">
-                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
-                molestias
-                exceptur.
+                - Developed and implemented a new social media strategy, resulting
+                in a <b>16% increase in brand engagement</b> within 3 months.
+              </p>
+              <p class="timeline-text">
+                - Developed and automated a dashboard to track key sales
+                performance metrics in real-time, <b>reducing reporting time by 40%</b>
+              </p>
+              <p class="timeline-text">
+                - Streamlined data collection processes across operations
+                into a unified reporting system, which <b>reduced data retrieval time
+                  by 50%</b> and improved cross-departmental data accessibility.
               </p>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Art director</h4>
+              <h4 class="h4 timeline-item-title">Research Analyst</h4>
 
-              <span>2013 — 2015</span>
+              <span>12/2017 — 03/2021</span>
 
               <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
+                - Analyzed large datasets to uncover patterns and trends, delivering reports that informed senior management’s data-driven decisions.
+              </p>
+              <p class="timeline-text">
+                - Conducted research on industry trends, competitors, and market opportunities, providing insights to support strategic planning.
+              </p>
+              <p class="timeline-text">
+                - Collaborated with cross-functional teams, offering data-driven recommendations that <b>improved project performance by 20%</b>
               </p>
 
             </li>
 
-            <li class="timeline-item">
+            <!--<li class="timeline-item">
 
               <h4 class="h4 timeline-item-title">Web designer</h4>
 
@@ -627,11 +443,53 @@
                 exceptur.
               </p>
 
-            </li>
+            </li> -->
 
           </ol>
 
         </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">University of Surrey - BA International Relations</h4>
+
+              <span>01/2020 — 05/2022</span>
+
+              <p class="timeline-text">
+                During my studies in International Relations, I honed skills in cross-cultural communication, strategic analysis, and global business dynamics.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">INTI - BBA International Business</h4>
+
+              <span>10/2023 — present</span>
+
+              <p class="timeline-text">
+                Currently pursuing a degree in International Business, with a focus on business analytics, data-driven decision-making, and strategic problem-solving.
+              </p>
+
+            </li>
+
+            
+          </ol>
+
+        </section>
+
 
         <section class="skill">
 
@@ -642,12 +500,7 @@
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">Web design</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
+                <h5 class="h5">SQL</h5>
               </div>
 
             </li>
@@ -655,38 +508,32 @@
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">Graphic design</h5>
-                <data value="70">70%</data>
+                <h5 class="h5">Tableau</h5>
               </div>
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
 
             </li>
 
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">Branding</h5>
-                <data value="90">90%</data>
+                <h5 class="h5">Microsoft Excel</h5>
               </div>
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
 
             </li>
 
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">WordPress</h5>
-                <data value="50">50%</data>
+                <h5 class="h5">Python</h5>
               </div>
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
+            </li>
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Power BI</h5>
               </div>
 
             </li>
@@ -713,7 +560,7 @@
 
         <section class="projects">
 
-          <ul class="filter-list">
+           <!-- <ul class="filter-list">
 
             <li class="filter-item">
               <button class="active" data-filter-btn>All</button>
@@ -729,9 +576,9 @@
 
             <li class="filter-item">
               <button data-filter-btn>Web development</button>
-            </li>
+            </li> 
 
-          </ul>
+          </ul> -->
 
           <div class="filter-select-box">
 
@@ -745,7 +592,7 @@
 
             </button>
 
-            <ul class="select-list">
+            <!--<ul class="select-list">
 
               <li class="select-item">
                 <button data-select-item>All</button>
@@ -761,15 +608,42 @@
 
               <li class="select-item">
                 <button data-select-item>Web development</button>
-              </li>
+              </li> 
 
-            </ul>
+            </ul> -->
 
           </div>
 
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <li class="project-item  active" id="project1" data-filter-item data-category="SQL" onclick="expandProject(this)" 
+            data-description="<p><b>Introduction:</b>
+              This project aims to demonstrate SQL skills by addressing a business problem: improving customer retention for an 
+              e-commerce platform. The analysis explores customer behavior, identifies high-value segments, and derives actionable 
+              insights to enhance retention strategies.</p><br><p><b>Problem Statement:</b>
+                The e-commerce platform is facing challenges in retaining customers. This project investigates the following questions:
+                - What customer behaviors and characteristics predict repeat purchases?
+                - How can customers be segmented to target retention efforts?
+                - What key metrics should be tracked to measure retention success?</p> <br> <p><b>Objectives</b>
+                The primary objectives of this project are:
+                - Analyze customer retention rates and identify repeat customers.
+                - Segment customers using Recency, Frequency, and Monetary (RFM) analysis.
+                - Identify products with high repeat purchase rates.
+                - Examine monthly revenue trends. </p>
+                <br> <p><b>Methodology:</b>
+                Using SQL, the following steps were performed:
+                1. A synthetic dataset was created to simulate e-commerce transactions.
+                2. SQL queries were written to calculate retention metrics, perform customer segmentation, and analyze product trends.
+                3. The results were used to derive actionable insights for retention strategies. </p>
+                <br> <p><b>Insights </b>
+                Key findings from the analysis include:
+                - High-value customers were identified through RFM analysis.
+                - Products in the Electronics category showed the highest repeat purchase rates.
+                - Monthly revenue trends highlighted peak periods for customer activity.<p>
+                  <br> <p><b>Conclusion:</b>
+                This project showcases the ability to use SQL for business analysis, demonstrating skills in data extraction, 
+                transformation, and deriving actionable insights. The insights generated can inform strategies to improve customer 
+                retention.</p>"
               <a href="#">
 
                 <figure class="project-img">
@@ -777,17 +651,67 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                  <img src="./assets/images/project1.png" alt="finance" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Finance</h3>
+                <h3 class="project-title">Improving Customer Retention for an E-commerce Platform</h3>
 
-                <p class="project-category">Web development</p>
+                <p class="project-category">SQL</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <li class="project-item  active" id="project2" data-filter-item data-category="web development" onclick="expandProject(this)" data-description=
+            "<p><b>Objective:</b><br>
+              To streamline the process of reporting and analyzing business performance metrics, enabling quicker and more informed 
+              decision-making.
+              <br>
+              <br><b>Project Description</b><br>
+                I designed and developed a comprehensive Excel Dashboard tailored to the needs of a small business. The dashboard served as a centralized platform for visualizing key business metrics, such as sales performance, product trends, and monthly revenues. It utilized Excel's advanced data visualization tools to present insights in a user-friendly and interactive format.
+                
+                The dashboard included the following features:
+                <br><br>
+                - Slicers for Filters:
+                
+                Users could filter data dynamically by months, products, or categories, ensuring quick access to specific insights.
+                This feature made it possible to focus on particular time frames or analyze individual product performance with a few clicks.
+                <br>
+                - Comprehensive Visualizations:
+                 Included bar charts, line graphs, and pie charts to provide a complete view of business trends.
+                Each visualization was designed to highlight specific performance indicators, such as sales growth, top-performing products, and revenue distribution.
+                <br>
+                - Interactive Design:
+                 Easy-to-use layout, with interactivity allowing users to customize the view based on their analytical needs.
+                Real-time updates of charts and figures upon filtering.
+                Automated Data Integration:
+                
+                The dashboard was linked to raw data sources, ensuring seamless updates whenever new data was entered, reducing manual work.
+                <br><br>
+                <b>Impact:</b> <br>
+                  The Excel Dashboard significantly improved reporting efficiency and decision-making within the business:
+                  <br>
+                  - Time Savings: Reporting time was reduced by 35%, allowing the team to focus more on strategy and operations.
+                  <br>
+                  - Enhanced Clarity: Simplified and visually engaging representation of data made insights accessible to all team members, regardless of technical expertise.
+                  <br>
+                  - Informed Decisions: With real-time insights, the business was able to identify trends faster and act proactively to optimize performance.
+                  <br><br>
+                  <b>Challenges and Solutions</b>
+                  <br><br>
+                  1. Data Overlap and Redundancy:
+                  <br>
+                  - Challenge: Initial data sets contained duplicate and conflicting entries.
+                  - Solution: Implemented data validation techniques and automated checks to ensure clean and accurate data.
+                  <br><br>
+                  2. Complexity of Filters:
+                  <br>
+                  - Challenge: Some users found the slicer filters overwhelming initially.
+                  - Solution: Conducted a brief training session and provided tooltips within the dashboard for guidance. 
+                  <br><br>
+                  <b>Results and Takeaways</b><br>
+                  This project demonstrated the value of customized reporting tools in improving operational efficiency and 
+                  decision-making. The success of the dashboard highlighted the importance of user-centered design in analytics solutions
+                   and underscored the potential of Excel as a powerful business intelligence tool.<p>"
               <a href="#">
 
                 <figure class="project-img">
@@ -795,17 +719,19 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                  <img src="./assets/images/sales-dashboard.png" alt="orizon" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Orizon</h3>
+                <h3 class="project-title">Business Performance Dashboard</h3>
 
-                <p class="project-category">Web development</p>
+                <p class="project-category">Excel</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
+
+            <!-- More projects will be added on the following items
+            <li class="project-item  active" id="project3" data-filter-item data-category="web design" onclick="expandProject(this)" data-description="<p>This is the Finance project, focusing on creating a financial dashboard using React.</p><p>It includes a range of data visualization techniques to provide insights on financial metrics. The project was developed over six months and has an interactive UI for enhanced user experience.</p>"
               <a href="#">
 
                 <figure class="project-img">
@@ -823,7 +749,7 @@
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
+            <li class="project-item  active" id="project4" data-filter-item data-category="applications" onclick="expandProject(this)" data-description="<p>This is the Finance project, focusing on creating a financial dashboard using React.</p><p>It includes a range of data visualization techniques to provide insights on financial metrics. The project was developed over six months and has an interactive UI for enhanced user experience.</p>">
               <a href="#">
 
                 <figure class="project-img">
@@ -841,7 +767,7 @@
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
+            <li class="project-item  active" id="project5" data-filter-item data-category="web design" onclick="expandProject(this)" data-description="<p>This is the Finance project, focusing on creating a financial dashboard using React.</p><p>It includes a range of data visualization techniques to provide insights on financial metrics. The project was developed over six months and has an interactive UI for enhanced user experience.</p>">
               <a href="#">
 
                 <figure class="project-img">
@@ -859,7 +785,7 @@
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
+            <li class="project-item  active" id="project6" data-filter-item data-category="web design" onclick="expandProject(this)" data-description="<p>This is the Finance project, focusing on creating a financial dashboard using React.</p><p>It includes a range of data visualization techniques to provide insights on financial metrics. The project was developed over six months and has an interactive UI for enhanced user experience.</p>">
               <a href="#">
 
                 <figure class="project-img">
@@ -877,7 +803,7 @@
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <li class="project-item  active" id="project7" data-filter-item data-category="web development" onclick="expandProject(this)" data-description="<p>This is the Finance project, focusing on creating a financial dashboard using React.</p><p>It includes a range of data visualization techniques to provide insights on financial metrics. The project was developed over six months and has an interactive UI for enhanced user experience.</p>">
               <a href="#">
 
                 <figure class="project-img">
@@ -895,7 +821,7 @@
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
+            <li class="project-item  active" id="project8" data-filter-item data-category="applications" onclick="expandProject(this)" data-description="<p>This is the Finance project, focusing on creating a financial dashboard using React.</p><p>It includes a range of data visualization techniques to provide insights on financial metrics. The project was developed over six months and has an interactive UI for enhanced user experience.</p>">
               <a href="#">
 
                 <figure class="project-img">
@@ -913,7 +839,7 @@
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <li class="project-item  active" id="project9" data-filter-item data-category="web development" onclick="expandProject(this)" data-description="<p>This is the Finance project, focusing on creating a financial dashboard using React.</p><p>It includes a range of data visualization techniques to provide insights on financial metrics. The project was developed over six months and has an interactive UI for enhanced user experience.</p>">
               <a href="#">
 
                 <figure class="project-img">
@@ -929,9 +855,14 @@
                 <p class="project-category">Web development</p>
 
               </a>
-            </li>
+            </li> -->
 
           </ul>
+
+          <div id="expanded-content" style="display: none;">
+    <button onclick="collapseProjectView()">← Back</button>
+    <div id="expanded-content-body"></div>
+</div>
 
         </section>
 
@@ -944,7 +875,7 @@
       <!--
         - #BLOG
       -->
-
+<!--
       <article class="blog" data-page="blog">
 
         <header>
@@ -1130,7 +1061,7 @@
       </article>
 
 
-
+-->
 
 
       <!--
@@ -1143,13 +1074,16 @@
           <h2 class="h2 article-title">Contact</h2>
         </header>
 
+        <!-- MAP Box is not necessary 
+         
         <section class="mapbox" data-mapbox>
           <figure>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
               width="400" height="300" loading="lazy"></iframe>
           </figure>
-        </section>
+        </section> 
+      -->
 
         <section class="contact-form">
 
